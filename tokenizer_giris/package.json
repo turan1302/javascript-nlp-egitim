@@ -1,0 +1,21 @@
+{
+  "name": "tokenizer_giris",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@nlpjs/basic": "^5.0.0-alpha.5",
+    "@nlpjs/core": "^5.0.0-alpha.5",
+    "@nlpjs/lang-tr": "^5.0.0-alpha.5",
+    "@nlpjs/nlp": "^5.0.0-alpha.5",
+    "@nlpjs/nlu": "^5.0.0-alpha.5",
+    "node-nlp": "^5.0.0-alpha.5",
+    "wink-eng-lite-web-model": "^1.8.1",
+    "wink-nlp": "^2.3.2"
+  }
+}
