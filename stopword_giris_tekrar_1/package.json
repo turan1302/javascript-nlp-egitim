@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "wink-eng-lite-web-model": "^1.8.1",
+    "wink-nlp": "^2.3.2"
+  },
+  "name": "stopword_giris_tekrar_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
