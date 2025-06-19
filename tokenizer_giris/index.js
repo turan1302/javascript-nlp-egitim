@@ -2,6 +2,10 @@
 ✅ 1️⃣ Tokenization (en temel işlem)
 Ne? Cümleyi kelimelere (token) bölme işlemi.
 Neden? Çünkü model veya analiz için önce cümleyi parçalara ayırman lazım.
+
+
+kurulum kütüphanesi:
+sudo npm install wink-nlp wink-eng-lite-web-model
  */
 
 // İngilizce için wink-nlp

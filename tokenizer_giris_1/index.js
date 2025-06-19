@@ -4,6 +4,9 @@
  and efficiency. Let's explore how NLP helps computers understand human language!"
 
 bu metni tokenize edelim
+
+kurulum kütüphanesi:
+sudo npm install wink-nlp wink-eng-lite-web-model
  */
 
 const winkNLP = require("wink-nlp")
