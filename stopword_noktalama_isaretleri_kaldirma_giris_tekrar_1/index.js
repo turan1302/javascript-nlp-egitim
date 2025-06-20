@@ -1,5 +1,6 @@
 /*
-"In recent years, climate change has become one of the most pressing global issues. Governments, organizations, and individuals are working together to reduce carbon emissions and promote sustainable practices."
+
+"Artificial intelligence and machine learning are transforming industries across the globe. From finance to healthcare, these technologies are driving innovation and creating new opportunities for growth."
 
 metnine stopwords uygulayalım. Stopword işleminde de noktalama işaretlerini silelim
 
@@ -9,7 +10,7 @@ sudo npm install wink-nlp wink-eng-lite-web-model
 
 const winkNLP = require("wink-nlp")
 const winkModel = require("wink-eng-lite-web-model")
-const nlpEng = winkNLP(winkModel);
+const nlpEng = winkNLP(winkModel)
 
 
 // stop word dartasını manuel yapalım
@@ -34,23 +35,23 @@ const stopWords = new Set([
     "you", "you'd", "you'll", "you're", "you've", "your", "yours", "yourself", "yourselves"
 ]);
 
-const textEng = "In recent years, climate change has become one of the most pressing global issues. Governments, organizations, and individuals are working together to reduce carbon emissions and promote sustainable practices.";
+const textEng = "Artificial intelligence and machine learning are transforming industries across the globe. From finance to healthcare, these technologies are driving innovation and creating new opportunities for growth.";
 
-
-(async ()=>{
-   const dotEng = nlpEng.readDoc(textEng);
+(async () => {
+    const dotEng = nlpEng.readDoc(textEng)
     const tokenEng = dotEng.tokens().out();
 
     console.log("--- Tokens ---")
     console.log(tokenEng)
 
-    const stopWordTokens = dotEng.tokens().filter(token=>{
+    const stopWordsToken = dotEng.tokens().filter(token=>{
         const word = token.out().toLowerCase();
         // Noktalama işaretini çıkarma — regex ile
         const isPunctuation = /^[.,!?;:()'"`]+$/.test(word);
         return !stopWords.has(word) && !isPunctuation;
     }).out();
 
-    console.log("--- StopWordToken ---")
-    console.log(stopWordTokens)
+    console.log("--- StopWords ---")
+    console.log(stopWordsToken)
 })()
+
